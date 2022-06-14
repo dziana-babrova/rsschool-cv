@@ -13,7 +13,7 @@ html, body, h1, h2, h3, h4, h5, h6, div {
 .header {
     background-color:#29C3B7;
 
-    padding: 5px 20px 5px 0px;
+    padding: 5px 0px 5px 0px;
     text-align: right;
     margin-bottom: 1%;
     /* position: fixed;
@@ -115,7 +115,42 @@ ul#skillNames li, ul#langlist li {
     height: fit-content;
 }
 
-#telegram, #instagram, #linkedin {
+#telegram {
     display: inline;
     width: 10%;
+}
+
+#instagram, #linkedin {
+    display: inline;
+    width: 10%;
+    height:fit-content;
+}
+
+#footer {
+ background-color:#29C3B7;
+    position: sticky;
+    padding: 5px 0px 0px 0px;
+    text-align: center;
+    margin-bottom: 1%;
+    /* position: fixed;
+    z-index: 10; */
+    width: 100%;
+    height: 5em;
+}
+
+#rsschool {
+    width: 5%;
+}
+
+#github {
+    width: 4%;
+}
+
+#date {
+    font-size: 150%;
+}
+
+a#uni, a#project {
+    text-decoration: none;
+    color:#458984;
 }
