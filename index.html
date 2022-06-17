@@ -13,24 +13,34 @@
     <div class="header"><header>
         <nav>
             <div class="navigation"><ul class="listOfNavMenu">
-                <li><a href="#Contact_info">Contact&#160;Info</a></li>
-                <li><a href="#About_me">About&#160;Me</a></li>
                 <li><a href="#Skills">Skills</a></li>
+                <li><a href="#About_me">About&#160;Me</a></li>
+                <li><a href="#Languages">Languages</a></li>
+                <li><a href="#Contact_info">Contact&#160;Info</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#workingexperience">Working&#160;Experience</a></li>
                 <li><a href="#My_projects">My&#160;Projects</a></li>
                 <li><a href="#Code_example">Code&#160;Example</a></li>
-                <li><a href="#Education">Education</a></li>
-                <li><a href="#Languages">Languages</a></li>
             </ul></div>
         </nav>
     </header></div>
 
-    <div class="ProfilePhoto"><img src="images/DSC_0424.jpg" alt="Profile_photo"></div>
+    
 
     <main>
+        <table>
+            <tr>
+                <td id="cellwithphoto" rowspan="4">
+        <div class="ProfilePhoto"><img src="images/DSC_0424.jpg" alt="Profile_photo"></div>
+        </td>
+        <td>
     <h1 class="Name">Diana Bobrova</h1>
-
+           
 <p class="Title">Software Testing Engineer</p>
-
+</td>
+ </tr>
+ <tr>
+     <td>
 <h2 id="Skills">Skills</h2>
 <div class=newlist><ul id="skillNames">
   <li>Functional Testing</li>
@@ -39,13 +49,20 @@
   <li>CSS</li>
   <li>HTML</li>
 </ul></div>
+</td>
+</tr>
 
+<tr>
+    <td>
 <section class="me">
 <h2 id="About_me">About Me</h2>
-
 <p id="info">2 years ago I started my career as a Software Testing Engineer. The tech world seized me so much that I decided to dive deeper into it. I finished "JS for Testing Engineers" course at EPAM. After that I decided to try myself so I took this course. And I feel that it could become my calling.</p>
 </section>
+</td>
+</tr>
 
+<tr>
+    <td>
 <section class="langinfo">
 <h2 id="Languages">Languages</h2>
 
@@ -55,27 +72,73 @@
 <li><span id="german">German</span>: A2</li>
 </ul>
 </section>
+</td>
+</tr>
+</table>
 
+<table>
+    <tr>
+        <td id="cellwithcontacts">
 <aside class="sidebar">
 <h2 id="Contact_info">Contact Info</h2>
 <ul class="contactinfo">
-<li>Location: Minsk, Belarus</li>
-<li>Phone: +375 29 511-22-36</li>
+<li>Phone:&nbsp;<a href="tel:+375295112236">+375 29 511-22-36</a></li>
 <li><a href="mailto:dzianababrova@gmail.com">Contact me</a></li>
-<li><a href="https://t.me/seamermaid_a"><img id="telegram" src="images/telegram.png" alt="telegram"></a></li>
-<li><a href="https://www.instagram.com/seamermaid_a"><img id="instagram" src="images/instagram.png" alt="instagram"></a></li>
-<li><a href="https://www.linkedin.com/in/diana-bobrova-7798141bb"><img id="linkedin" src="images/linkedin.png" alt="LinkedIn"></a></li>
+<li><a href="https://t.me/seamermaid_a" target="_blank"><img id="telegram" src="images/telegram.png" alt="telegram"></a></li>
+<li><a href="https://www.instagram.com/seamermaid_a" target="_blank"><img id="instagram" src="images/instagram.png" alt="instagram"></a></li>
+<li><a href="https://www.linkedin.com/in/diana-bobrova-7798141bb" target="_blank"><img id="linkedin" src="images/linkedin.png" alt="LinkedIn"></a></li>
 </ul>
 </aside>
+</td>
+<td>
+<h2 id="Education">Education</h2>
+
+<ul id="educationlist">
+    <li ><a id="uni" href="https://vsu.by/en" target="_blank">Vitebsk State University </a><span class="year">(2013-2018)</span></li>
+    <li> Courses:
+        <ul>
+            <li>Software Testing Introduction <span class="year">(2020)</span></li>
+    <li>JavaScript for Testing Engineers <span class="year">(2022)</span></li>
+    <li>RS School Course «JavaScript/Front-end. Stage 0» <span class="year">(in progress)</span></li>
+    </ul>
+    </li>
+    </ul>
+    </td>
+    </tr>
+    </table>
+
+    <h2 id="workingexperience">Working Experience</h2>
+<table id=work>
+    <tr>
+        <td id="workyear"><p>2020 - now</p><p>EPAM</p></td>
+        <td id="tasks"><p id="mytitle">Software&nbsp;Testing&nbsp;Engineer</p>
+        <ul id="taskslist">
+            <li>performed manual functional testing of mobile application (iOS and Android);</li>
+<li>performed testing of IoT devices;</li>
+<li>performed requirements analysis;</li>
+<li>created test cases for the new app functionality;</li>
+<li>created test scenarios involving the mobile app and IoT devices;</li>
+<li>reviewed and updated the existing test cases in the regression library;</li>
+<li>compiled the regression library;</li>
+<li>analyzed, tracked and verified defects of the mobile application and IoT devices;</li>
+        </ul></td>
+    </tr>
+    </table>
 
 
 <h2 id="My_projects">My Projects</h2>
 
-<p><a id="project" href="https://dziana-babrova.github.io/rsschool-cv/">CV</a></p>
-
+<table id="projects">
+    <tr>
+        <td id="pr1">
+<p><a id="project" href="https://dziana-babrova.github.io/rsschool-cv/" target="_blank"><img id="project1image" src="images/423247project_mobile.jpg" alt="project 1" title="CV Project"></a></p>
+</td>
+<td id="pr2"><img id="project2image" src="images/423247project_mobile.jpg" alt="future project" title="To be developed"></td>
+</tr>
+</table>
 <h2 id="Code_example">Code Example</h2>
 
-    <code>
+   <pre id="block"> <code>
 function secondsOfDay() {
     let today = new Date();
     let time = today.getHours() * 3600 + today.getMinutes() * 60 + today.getSeconds();
@@ -83,27 +146,20 @@ function secondsOfDay() {
 }
 
 secondsOfDay();
-</code>
+</code> </pre>
 
-<h2 id="Education">Education</h2>
 
-<ul>
-    <li ><a id="uni" href="https://vsu.by/en">Vitebsk State University</a></li>
-    <li> Courses:
-        <ul>
-    <li>JavaScript for Testing Engineers</li>
-    <li>RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)</li>
-    </ul>
-    </li>
-    </ul>
 </main>
 
-<div id="footer">
-<footer>
-    <a href=https://github.com/dziana-babrova><img id="github" src="images/github.png" alt="github"></a>
-    <time id="date" datetime="2022">2022</time>
-    <a href=https://rs.school/js/><img id="rsschool" src="images/rs_school_js.svg" alt="rsschool"></a>
-    
+<div >
+<footer id="footer">
+    <table id="footertable">
+        <tr>
+            <td id="rsschoolcell"><a href=https://rs.school/js/ target="_blank"><img id="rsschool" src="images/rs_school_js.svg" alt="rsschool"></a> </td>
+        <td id="yearcell"><time id="date" datetime="2022">2022</time> </td>
+    <td id="githubcell"><a href=https://github.com/dziana-babrova target="_blank"><img id="github" src="images/github.png" alt="github"></a></td>
+        </tr>  
+    </table>
 </footer>
 </div>
 </div>
