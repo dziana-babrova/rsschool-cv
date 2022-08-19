@@ -12,13 +12,14 @@
 
 ### About Me
 
-2 years ago I started my career as a Software Testing Engineer. The tech world seized me so much that I decided to dive deeper into it. I finished "JS for Testing Engineers" course at EPAM. I decided to try myself and go inside so I took this course. And I feel that it could become my calling.
+I started my IT career as a Software Testing Engineer 2 years ago. My first project involved the interaction with IoT devices. And as I'm a huge fan of Smart Home concept, it grabbed my full attention. I felt that this sphere resonates with me. The only open question was wether I'd like to keep on being a tester or to try something new within this field. I decided to keep on learning and gain more technical knowledge. As a result, I chose JS for studying and it's getting more and more exciting for me from day to day.
 
 ### Skills
 
 * Functional Testing
 * JavaScript
 * Git
+* HTML/CSS
 
 ### Code Example
 
@@ -36,7 +37,8 @@ secondsOfDay();
 * [Vitebsk State University](https://vsu.by/en)
 * Courses:
     - JavaScript for Testing Engineers
-    - RS Schools Course «JavaScript/Front-end. Stage 0» (*in progress*)
+    - RS School «JavaScript/Front-end. Stage 0» 2022Q2
+    - RS School «JavaScript/Front-end» 2022Q3 (_in progress_)
 
 ### Languages
 
