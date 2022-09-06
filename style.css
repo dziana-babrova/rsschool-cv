@@ -1,0 +1,470 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: #a9a7a0;
+    display: flex;
+    position: relative;
+    margin: 0;
+}
+
+.container {
+    min-width: 60%;
+    margin: 0 auto;
+    background-color: #501b54;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    /* border-left: black solid 1px;
+    border-right: black solid 0.5px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.header {
+  width: 100%;
+    background-color: rgba(255, 255, 255, 0.582);
+    padding: 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigation {
+  width: 100%;
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.listOfNavMenu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0px;
+}
+
+.header ul li {
+    margin: 0;
+    display:flex;
+    flex-direction: row;
+      flex-wrap: wrap;
+  justify-content: space-evenly;
+
+    list-style-type: none;
+    text-transform: uppercase;
+    display: inline; /* Отображать как строчный элемент */
+    color:#bbfbf5;
+    outline: none;
+    font-size: 150%;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 600;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: #501b54;
+}
+
+.header ul li a:visited {
+  color: #501b54;
+}
+
+.header ul li a:hover {
+  color: rgba(255, 255, 255, 0.61);
+}
+
+.anchor {
+  position: relative;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.photo-name-containter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.name-container {
+  width: 45%;
+  font-family: poppins;
+  color: white;
+  /* box-sizing: border-box; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.name {
+  margin: 130px auto 50px;
+  position: relative;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 70px;
+  text-align: start;
+}
+
+.title {
+  font-size: 25px;
+  text-align: start;
+  margin-left: 25px;
+  position: relative;
+  color: #c7c3c4;
+}
+
+.photo-container {
+  background-image: url(./images/DSC_0424.jpg);
+  background-size:cover;
+  background-attachment: fixed;
+  transform: scaleX(-1);
+  width: 55%;
+  min-height: 400px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.left-info-container {
+  width: 45%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contacts-header, .skills-header, .languages-header, .working-experience-header, .education-title, .projects-title, .code-title, .about-title {
+  color: black;
+  font-family: poppins;
+  font-size: xx-large;
+  width: 304px;
+  margin: 30px auto;
+  border-bottom: solid 2px #501b54;
+}
+
+.contactinfo {
+  width: 304px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0px;
+  row-gap: 10px;
+  column-gap: 20px;
+  margin-top: 0px;
+}
+
+li {
+  text-decoration: none;
+}
+
+.email, .phone {
+  width: 100%;
+  text-decoration: none;
+  color:#501b54;
+  font-family: poppins;
+}
+
+#telegram, #instagram, #linkedin {
+  width: 40px;
+  height: 40px;
+  opacity: 0.8;
+}
+
+#telegram:hover, #instagram:hover, #linkedin:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.skills-list, .code-example {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  list-style-type: none;
+  color:#501b54;
+  font-family: poppins;
+  row-gap: 10px;
+  font-weight: 600;
+}
+
+.skills-list li {
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-bar {
+  height: 15px;
+  width: 200px;
+  background-color:#c7c3c4;
+  border-radius: 15px;
+}
+
+.progress-testing {
+  width: 90%;
+  height: 100%;
+  background-color: #501b54;
+  border-radius: 15px;
+}
+
+.progress-html, .progress-git {
+  height: 100%;
+  background-color: #501b54;
+  border-radius: 15px;
+  width: 25%;
+}
+
+.progress {
+  height: 100%;
+  background-color: #501b54;
+  border-radius: 15px;
+  width: 15%;
+}
+
+.langlist {
+  list-style-type: none;
+  color:#501b54;
+  font-family: poppins;
+  row-gap: 10px;
+  font-weight: 600;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#english, #german {
+  color:#9a7780;
+}
+
+.code {
+  font-size: x-small;
+  margin: 0px;
+}
+
+.about-myself {
+  width: 100%;
+  background-color: #501b54;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-title {
+
+  color: white;
+  border-bottom: white solid 1px;
+}
+
+.about-container {
+  width: 304px;
+  align-self: center;
+  margin-bottom: 40px;
+}
+
+.about-block {
+ width: 340px;
+ font-family: poppins;
+ text-align: justify;
+ align-self: center;
+}
+
+.right-info-container {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.working-experience, .education, .project-section {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  font-family: poppins;
+}
+
+.working-experience-header, .education-title, .projects-title {
+  width: 350px;
+  align-self: flex-start;
+  text-align: left;
+  margin: 30px 0px;
+}
+
+.work-years {
+  color: #8a435d;
+  font-family: poppins;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.company-name {
+  margin-top: 10px;
+  color: #8a435d;
+  font-family: poppins;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.taskslist, .education-list {
+  font-size: small;
+  list-style-type: circle;
+  height: fit-content;
+  font-weight: 400;
+}
+
+.education-list {
+  margin-bottom: 55px;
+}
+
+#uni {
+  text-decoration: none;
+  color: #501b54;
+  font-weight: 500;
+}
+
+#uni:hover {
+  text-decoration: underline;
+}
+
+.company-name:hover .taskslist{
+    display: block
+}
+
+.year {
+  color:#8a435d;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.project-section {
+  background-color: #501b54;
+  row-gap: 15px;
+}
+
+.projects-title {
+  color: white;
+  border-bottom: solid 1px white;
+}
+
+.project {
+  width: 400px;
+  height: 200px;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom: 45px;
+  opacity: 0.5;
+  position: relative;
+}
+
+.project .text{
+  box-sizing: border-box;
+  opacity:0;
+  position:absolute;
+  bottom:0;
+  transition: 0.5s;
+  width:100%;
+  font-size:22px;
+  font-family: poppins;
+  background-color:rgba(0, 0, 0, 0.5);
+  padding:10px 20px;
+  color:#fff;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.project:hover .text{
+  opacity:1;
+}
+
+.project:hover {
+  opacity: 1;
+}
+
+ .travel {
+  background-image: url("./images/2022-07-21_21h54_40.png");
+  background-size: cover;
+ }
+
+ .momentum {
+  background-image: url("./images/2022-08-16_22h12_35.png");
+  background-size: cover;
+ }
+
+ .horror {
+  background-image: url("./images/2022-08-27_16h05_55.png");
+  background-size: cover;
+ }
+
+ .project-link {
+  width: 100%;
+  height: 100%;
+ }
+
+ .footer {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+ }
+
+ .links {
+  width: 50%;
+  margin: 0px 80px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+ }
+
+ .social-link {
+  width: 40px;
+  height: 40px;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.social-link:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+ .rs {
+  width: 90px;
+ }
+
+ .made {
+  margin: auto 0px;
+  display: flex;
+  align-items: flex-end;
+  font-family: poppins;
+  font-size: smaller;
+  opacity: 1;
+ }
